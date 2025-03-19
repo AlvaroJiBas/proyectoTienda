@@ -1,8 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter } from "react-router-dom";
+import {Route, Routes , BrowserRouter } from "react-router-dom";
 import Main from './components/Main/Main';
-import NavBar from './NavBar/NavBar';
+import NavBar from './components/NavBar/NavBar';
+import Typeof from './pages/Typeof';
 // import Login from './components/Login/Login';
 function App() {
 
@@ -12,7 +13,7 @@ function App() {
       <NavBar />
         <Main  />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Typeof />} />
         <Route path="/tipo:Mujer" element={<Typeof />} />
         <Route path="/tipo:hombre" element={<Typeof />} />
         <Route path="/tipo:Joyeria" element={<Typeof />} />
