@@ -14,12 +14,12 @@ function App() {
         <Main  />
       <Routes>
         <Route path="/" element={<Typeof />} />
-        <Route path="/tipo:Mujer" element={<Typeof />} />
-        <Route path="/tipo:hombre" element={<Typeof />} />
-        <Route path="/tipo:Joyeria" element={<Typeof />} />
-        <Route path="/tipo:Electronica" element={<Typeof />} />
+        <Route path="/tipo:1" element={<Typeof />} />
+        <Route path="/tipo:2" element={<Typeof />} />
+        <Route path="/tipo:3" element={<Typeof />} />
+        <Route path="/tipo:4" element={<Typeof />} />
       </Routes> 
-        <Main />
+        
       </header>
     </div>
   );

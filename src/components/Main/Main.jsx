@@ -1,5 +1,5 @@
 import React, {useState,useEffect} from "react";
-import { data } from "react-router-dom";
+
 import styles from './Main.css';
 
 
@@ -8,10 +8,18 @@ import styles from './Main.css';
 
 const Main =(tipo) => {
     const [producto,setProducto]=useState([]);
+   switch (tipo) {
+    case value:
+        
+        break;
    
+    default:
+        break;
+   }
     useEffect(()=>{
         fetch('https://fakestoreapi.com/products')
         .then(response => response.json())
+        .then(data => data.filter(producto => producto.category === tipo.tipo))
         .then(data => setProducto(data))
         .catch((error) => {
             console.error('Error:', error);
