@@ -1,14 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter } from "react-router-dom";
-import Login from './components/Login/Login';
+import Main from './components/Main/Main';
 function App() {
 
   return (
     <div className="App">
       <header className="App-header">
-      <Login />
-      
+    
+        <Main />
       </header>
     </div>
   );
