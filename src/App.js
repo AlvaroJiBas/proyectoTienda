@@ -10,6 +10,13 @@ function App() {
     <div className="App">
       <header className="App-header">
       <NavBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/tipo:Mujer" element={<Typeof />} />
+        <Route path="/tipo:hombre" element={<Typeof />} />
+        <Route path="/tipo:Joyeria" element={<Typeof />} />
+        <Route path="/tipo:Electronica" element={<Typeof />} />
+      </Routes> 
         <Main />
       </header>
     </div>

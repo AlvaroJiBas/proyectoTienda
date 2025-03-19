@@ -8,7 +8,7 @@ const NavBar = () => {
         <span>Logo</span>
 
        <ul>
-        <li><a href="">Category</a></li>
+        <li>Category</li>
         <li><a href="">Lastest product</a></li>
         <li><a href="">contact</a></li>
         <li><a href="" className='btn'>Login</a></li>

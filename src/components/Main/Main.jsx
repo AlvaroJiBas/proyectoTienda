@@ -1,9 +1,14 @@
 import React, {useState,useEffect} from "react";
 import { data } from "react-router-dom";
 import styles from './Main.css';
-const Main =() => {
-    const [producto,setProducto]=useState([]);
 
+
+
+
+
+const Main =(tipo) => {
+    const [producto,setProducto]=useState([]);
+   
     useEffect(()=>{
         fetch('https://fakestoreapi.com/products')
         .then(response => response.json())
@@ -17,6 +22,7 @@ const Main =() => {
 
 return (
     <>
+    <div id="productos">
      { producto.map((producto,index)=> (
     <div key={index} className={styles.producto}>
         <img src={producto.image} className={styles.imagen}/>
@@ -27,6 +33,7 @@ return (
 
     </div>
 ))}
+</div>
     </>
 )
 
