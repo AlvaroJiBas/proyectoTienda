@@ -1,0 +1,37 @@
+.NavBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 2rem;
+
+    ul {
+        list-style: none;
+        display: flex;
+
+        li:not(last-of-child) {
+            margin-left: 1rem;
+        }
+
+        a {
+            color: #444444;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    }
+
+}
+
+.btn {
+    background-color: black;
+    color: white !important;
+    padding: .3rem 1.5rem;
+    border-radius: 25px;
+    transition: 300ms ease-in-out;
+
+    &:hover {
+        background-color: white;
+        color: black !important;
+        border: .5px solid black;
+  
+    }
+}
