@@ -8,9 +8,10 @@ const NavBar = () => {
         <span>Logo</span>
 
        <ul>
-        <li><a href="">Category</a></li>
-        <li><a href="">Lastest product</a></li>
-        <li><a href="">contact</a></li>
+        <li><link to="/tipo:Hombre">men's clothing </link></li>
+        <li><a href="">women's clothing</a></li>
+        <li><a href="">jewelery</a></li>
+        <li><a href="">electronics</a></li>
         <li><a href="" className='btn'>Login</a></li>
        </ul>
        </div>

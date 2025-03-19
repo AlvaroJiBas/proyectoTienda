@@ -16,18 +16,22 @@ const Main =() => {
   
 
 return (
-    <>
+    
+    <div className="products">
+      
      { producto.map((producto,index)=> (
-    <div key={index} className={styles.producto}>
+    <div className="product" key={index}>
         <img src={producto.image} className={styles.imagen}/>
-        <div className={styles.info}>
+        <div className='p-heading'>
             {producto.title}
             <p className={styles.precio}>{producto.price}</p>
         </div>
 
     </div>
-))}
-    </>
+    ))}
+    </div>
+
+  
 )
 
 }
