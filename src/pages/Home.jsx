@@ -6,7 +6,7 @@ import NavBar from '../components/NavBar/NavBar';
 import { useParams } from 'react-router-dom';
 
 // import Login from './components/Login/Login';
-function Typeof() {
+const Home = () => {
  const { id } = useParams();
   return (
     <div className="App">
