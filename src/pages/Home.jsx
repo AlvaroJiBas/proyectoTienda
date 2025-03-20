@@ -7,15 +7,16 @@ import { useParams } from 'react-router-dom';
 
 // import Login from './components/Login/Login';
 const Home = () => {
- const { id } = useParams();
+ const { categoria } = useParams();
   return (
     <div className="App">
       <header className="App-header">
+        {console.log({categoria})}
       <NavBar />
-        <Main tipo={id}/>
+        <Main tipo={categoria}/>
       </header>
     </div>
   );
 }
 
-export default Typeof;
+export default Home;
